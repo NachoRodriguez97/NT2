@@ -3,79 +3,74 @@ import Sistema from "./components/Sistema.vue";
 </script>
 
 <template>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        crossorigin="anonymous"
+      />
+    </head>
 
-<div>
-    <p>
-      <router-link to="/">Sistema</router-link> |
-      <router-link to="/Deportes">Deportes</router-link> |
-      <router-link to="/Profesores">Profesores</router-link> |
-      <router-link to="/Zonas">Zonas</router-link> |
-       <router-link to="/Usuario">Usuario</router-link> |
-    </p>
-    <router-view></router-view>
-  </div>
-  
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <router-link to="/"
+            ><img
+              src="./assets/Home/Logo.png"
+              class="ml-5"
+              width="67"
+              height="74"
+          /></router-link>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="float-right">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <router-link class="nav-link active mx-3" to="/Deportes"
+                    >Deportes</router-link
+                  >
+                </li>
+                <li class="nav-item">
+                  <router-link class="nav-link active mx-3" to="/Profesores"
+                    >Profesores</router-link
+                  >
+                </li>
+                <li class="nav-item">
+                  <router-link class="nav-link active mx-3" to="/Zonas"
+                    >Zonas</router-link
+                  >
+                </li>
+                <li class="nav-item">
+                  <router-link to="/Usuario"
+                    ><img
+                      src="./assets/Home/Usuario.png"
+                      class="mx-3"
+                      width="40"
+                      height="40"
+                  /></router-link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <router-view></router-view>
+    </div>
+  </html>
 </template>
 
-<style>
-@import './assets/base.css';
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
-}
-
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
-
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-}
-</style>
