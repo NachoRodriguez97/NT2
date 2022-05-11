@@ -4,21 +4,15 @@
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-        crossorigin="anonymous"
-      />
-      <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
       />
     </head>
 
     <div class="container mt-5">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="text-left px-5">
+      <div class="row px-5">
+        <div class="col-6 px-5">
+          <div class="text-left">
             <h1
               class="
                 display-1
@@ -27,14 +21,13 @@
                 animate__animated animate__flipInX
               "
               style="
-                line-height: 80px;
                 font-family: Akkurat Pro;
                 font-weight: bold;
               "
             >
               <strong
-                >Tu deporte favorito a <br />
-                un click de distancia</strong
+                >Tu deporte favorito a
+                <br> un click de distancia</strong
               >
             </h1>
             <p
@@ -43,7 +36,7 @@
                 font-family: Akkurat Pro;
                 font-size: 25px;
               "
-              class="animate__animated animate__fadeInLeft"
+              class="mt-3 animate__animated animate__fadeInLeft"
             >
               Contactá profesores cercanos <br />
               a tu zona y practicá tu disciplina <br />
@@ -66,21 +59,50 @@
 
     <div id="section" class="mt-5 pt-2">
       <h1
-        class="display-1 text-left pt-5 text-center"
+        class="display-2 text-left pt-5 text-center"
         style="line-height: 80px; font-family: Akkurat Pro; font-weight: bold"
       >
         <strong><i>ENTRENAR NUNCA FUE TAN FÁCIL</i></strong>
       </h1>
     </div>
 
-    <div class="container text-center">
+    <div class="text-center">
       <h1
-        class="display-5 text-left pt-5"
+        class="display-5 pt-5"
         style="line-height: 80px; font-family: Akkurat Pro; font-weight: bold"
       >
         <strong>Deportes populares</strong>
       </h1>
     </div>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner mt-5">
+    <div class="carousel-item active text-center">
+      <img src="../assets/Home/Functional.png" width=50% height=50% alt="...">
+    </div>
+    <div class="carousel-item text-center">
+      <img src="../assets/Home/Functional.png" width=50% height=50% alt="...">
+    </div>
+    <div class="carousel-item text-center">
+      <img src="../assets/Home/Functional.png" width=50% height=50% alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
   </html>
 </template>
 
