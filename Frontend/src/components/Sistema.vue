@@ -20,14 +20,11 @@
                 pt-5
                 animate__animated animate__flipInX
               "
-              style="
-                font-family: Akkurat Pro;
-                font-weight: bold;
-              "
+              style="font-family: Akkurat Pro; font-weight: bold"
             >
               <strong
-                >Tu deporte favorito a
-                <br> un click de distancia</strong
+                >Tu deporte favorito a <br />
+                un click de distancia</strong
               >
             </h1>
             <p
@@ -36,7 +33,7 @@
                 font-family: Akkurat Pro;
                 font-size: 25px;
               "
-              class="mt-3 animate__animated animate__fadeInLeft"
+              data-aos="fade-down"
             >
               Contactá profesores cercanos <br />
               a tu zona y practicá tu disciplina <br />
@@ -75,34 +72,109 @@
       </h1>
     </div>
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner mt-5">
-    <div class="carousel-item active text-center">
-      <img src="../assets/Home/Functional.png" width=50% height=50% alt="...">
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner mt-5">
+        <div class="carousel-item active text-center">
+          <img
+            src="../assets/Home/Functional.png"
+            width="50%"
+            height="50%"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item text-center">
+          <img
+            src="../assets/Home/KickBoxing.png"
+            width="50%"
+            height="50%"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item text-center">
+          <img
+            src="../assets/Home/Futbol.png"
+            width="50%"
+            height="50%"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div class="carousel-item text-center">
-      <img src="../assets/Home/Functional.png" width=50% height=50% alt="...">
-    </div>
-    <div class="carousel-item text-center">
-      <img src="../assets/Home/Functional.png" width=50% height=50% alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
 
+    <div class="text-center">
+      <h1
+        class="display-5 pt-5"
+        style="line-height: 80px; font-family: Akkurat Pro; font-weight: bold"
+      >
+        <strong>Profesores populares</strong>
+      </h1>
+    </div>
+    
+    <div class="row text-center container-fluid">
+        <div class="col-4">
+          <img src="../assets/Home/Juana.png" width="50%" data-aos="zoom-out" />
+        </div>
+        <div class="col-4">
+          <img src="../assets/Home/Arnold.png" width="50%" data-aos="zoom-out"/>
+        </div>
+        <div class="col-4">
+          <img src="../assets/Home/Cristian.png" width="50%" data-aos="zoom-out" />
+        </div>
+      </div>
 
+       <div id="section" class="mt-5 pt-2">
+      <h1
+        class="display-2 text-left pt-5 text-center"
+        style="line-height: 80px; font-family: Akkurat Pro; font-weight: bold"
+      >
+        <strong><i>¿ESTÁS LISTO PARA TU GYM MEET?</i></strong>
+      </h1>
+    </div>
+   
   </html>
 </template>
 
