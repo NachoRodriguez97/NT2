@@ -1,7 +1,3 @@
-<script setup>
-import Sistema from "./components/Sistema.vue";
-</script>
-
 <template>
   <html lang="en">
     <head>
@@ -33,11 +29,13 @@ import Sistema from "./components/Sistema.vue";
           <div class="float-right">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav">
+
                 <li class="nav-item">
                   <router-link class="nav-link active mx-3" to="/Deportes"
                     >Deportes</router-link
                   >
                 </li>
+
                 <li class="nav-item">
                   <router-link class="nav-link active mx-3" to="/Profesores"
                     >Profesores</router-link
@@ -48,8 +46,13 @@ import Sistema from "./components/Sistema.vue";
                     >Zonas</router-link
                   >
                 </li>
+                  <li class="nav-item">
+                  <router-link v-if="estaLogeado" class="nav-link active mx-3" to="/AdmUsuarios"
+                    >Administración</router-link
+                  >
+                </li>
                 <li class="nav-item">
-                  <router-link to="/Usuario"
+                  <router-link to="/Login"
                     ><img
                       src="./assets/Home/Usuario.png"
                       class="mx-3"
@@ -67,4 +70,22 @@ import Sistema from "./components/Sistema.vue";
     </div>
   </html>
 </template>
+
+<script>
+import { loginStore } from "./store/usuario.js";
+import { storeToRefs } from "pinia";
+
+export default {
+  name: "Login",
+  setup() {
+    const store = loginStore();
+    const { estaLogeado } = storeToRefs(store);
+    return {
+      store,
+      estaLogeado,
+    };
+  },
+};
+</script>
+
 
