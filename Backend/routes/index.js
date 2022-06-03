@@ -9,6 +9,16 @@ app.use(cors());
 const lista = [{ mail: "mateo.amarillo50@gmail.com", Nombre: "Mateo", Apellido: "Amarillo" },
 { mail: "nacho.rodriguez@gmail.com", Nombre: "Ignacio", Apellido: "Rodriguez" }];
 
+const usuario = { email : 'usuario@test.com', password : '123456'  };
+
+app.post('/api/login', (req, res) => {
+    if( req.body && req.body.email === usuario.email && req.body.password == usuario.password) {
+      res.json(req.body);
+    } else {
+      res.sendStatus(400);
+    }
+  })
+
 app.get('/api/lista', (req, res) => {
     res.json(lista);
 })
