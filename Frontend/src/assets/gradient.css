@@ -9,6 +9,51 @@
     animation: cambiar 10s ease-in-out infinite;
 }
 
+#section2{
+    text-align: center;
+    width: 100%;
+    height: 725px;
+    color: #fff;
+    background: linear-gradient(45deg,#91ff3c,#27c2a6,#0085fb,black);
+    background-size: 300% 300%;
+    position: relative;
+    animation: cambiar 10s ease-in-out infinite;
+}
+
+#rectangle{
+    position: absolute;
+    left: 25%;
+    top: 10%;
+    width: 700px;
+    height: 600px;
+    background: white;
+    border-radius: 100px;
+    box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+#date{
+    left:50%;
+}
+
+#button{
+    background: linear-gradient(45deg,#91ff3c,#27c2a6,#0085fb,black);
+    border-radius: 10px;
+    text-decoration: none;
+    outline: none;
+    left:50%;
+    width: 300px;
+    height: 75px;
+    border-radius: 100px;
+    background-size: 300% 300%;
+    box-shadow:
+    inset 0 -3em 3em rgba(0,0,0,0.1),
+          0.3em 0.3em 1em rgba(0,0,0,0.3);
+    animation: cambiar 10s ease-in-out infinite;
+}
+
 @keyframes cambiar{
     0%{background-position: 0 50%;}
     50%{background-position: 100% 50%;}

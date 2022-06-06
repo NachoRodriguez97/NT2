@@ -29,7 +29,6 @@
           <div class="float-right">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav">
-
                 <li class="nav-item">
                   <router-link class="nav-link active mx-3" to="/Deportes"
                     >Deportes</router-link
@@ -41,24 +40,53 @@
                     >Profesores</router-link
                   >
                 </li>
-                <li class="nav-item">
-                  <router-link class="nav-link active mx-3" to="/Horarios"
-                    >Horarios</router-link
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
                   >
+                    Reservas
+                  </a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <li class="nav-item">
+                      <router-link class="nav-link active mx-3" to="/Reservar"
+                        >Reservar</router-link
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <router-link class="nav-link active mx-3" to="/Reservas"
+                        >Mis reservas</router-link
+                      >
+                    </li>
+                  </ul>
                 </li>
-                  <li class="nav-item">
-                  <router-link v-if="estaLogeado" class="nav-link active mx-3" to="/AdmUsuarios"
+                <li class="nav-item">
+                  <router-link
+                    v-if="estaLogeado"
+                    class="nav-link active mx-3"
+                    to="/AdmUsuarios"
                     >Administración</router-link
                   >
                 </li>
                 <li class="nav-item">
-                  <router-link to="/Login"
+<!--                   <router-link to="/Login"
                     ><img
                       src="./assets/Home/Usuario.png"
                       class="mx-3"
                       width="40"
                       height="40"
-                  /></router-link>
+                  /></router-link> -->
+                  <router-link to="/Login">
+                    <button type="button" class="btn btn-primary">Iniciar sesion</button>
+                  </router-link>
                 </li>
               </ul>
             </div>
