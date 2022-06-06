@@ -9,6 +9,8 @@ import Login from '../views/LoginView.vue'
 import Registro from '../views/RegistroView.vue'
 import Reservar from '../views/ReservarView.vue'
 import NotFound from '../views/NotFoundView.vue'
+import Horarios from '../components/Horarios.vue'
+import EditDeporte from '../components/EditDeporte.vue'
 
 const routes = [
     {path: '/', component: Home },
