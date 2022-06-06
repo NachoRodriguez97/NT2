@@ -76,13 +76,16 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <router-link to="/Login"
+<!--                   <router-link to="/Login"
                     ><img
                       src="./assets/Home/Usuario.png"
                       class="mx-3"
                       width="40"
                       height="40"
-                  /></router-link>
+                  /></router-link> -->
+                  <router-link to="/Login">
+                    <button type="button" class="btn btn-primary">Iniciar sesion</button>
+                  </router-link>
                 </li>
               </ul>
             </div>
