@@ -42,8 +42,8 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <router-link class="nav-link active mx-3" to="/Zonas"
-                    >Zonas</router-link
+                  <router-link class="nav-link active mx-3" to="/Horarios"
+                    >Horarios</router-link
                   >
                 </li>
                   <li class="nav-item">

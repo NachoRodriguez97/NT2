@@ -5,6 +5,8 @@ import Profesores from '../components/Profesores.vue'
 import Zonas from '../components/Zonas.vue'
 import AdmUsuarios from '../components/AdmUsuarios.vue'
 import Login from '../components/Login.vue'
+import Horarios from '../components/Horarios.vue'
+import EditDeporte from '../components/EditDeporte.vue'
 import NotFound from '../components/NotFound.vue'
 
 const routes = [
@@ -14,6 +16,8 @@ const routes = [
     {path: '/Zonas', component: Zonas},
     {path: '/AdmUsuarios', component: AdmUsuarios},
     {path: '/Login', component: Login},
+    {path: '/Horarios', component: Horarios},
+    {path: '/EditDeporte/:nombre', component: EditDeporte},
     { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound },
 
 ]
