@@ -9,6 +9,50 @@
       {{ dep.nombre }}
       <button style="margin: 5px" class="btn btn-outline-primary">Ver Horarios</button>
     </li>
+    <div class="container mt-5">
+      <div class="row px-5">
+        <div class="col-6">
+          <div class="text-center"></div>
+          <img
+            src="../assets/Deportes/Imagen.png"
+            class="animate__animated animate__fadeInRight"
+            width="495"
+            height="625"
+          />
+        </div>
+        <div class="col-6 px-5">
+          <div class="text-left">
+            <h1
+              class="
+                display-1
+                text-left
+                pt-5
+                animate__animated animate__flipInX
+              "
+              style="font-family: Akkurat Pro; font-weight: bold"
+            >
+              <strong
+                >Tu deporte favorito a <br />
+                un click de distancia</strong
+              >
+            </h1>
+            <p
+              style="
+                line-height: 30px;
+                font-family: Akkurat Pro;
+                font-size: 25px;
+              "
+              data-aos="fade-down"
+            >
+              Contactá profesores cercanos <br />
+              a tu zona y practicá tu disciplina <br />
+              favorita de manera fácil y segura
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     </div>
   <hr>
     <!--VISTA PARA ADMINISTRADOR-->
