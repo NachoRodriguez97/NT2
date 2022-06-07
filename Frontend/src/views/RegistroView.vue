@@ -8,19 +8,19 @@
                 </div>
             </div>
         </div>
-        <Registro v-if="!esProfesor"></Registro>
+        <RegistroAlumno v-if="!esProfesor"></RegistroAlumno>
         <RegistroProfesor v-else></RegistroProfesor>
     </div>
 </template>
 
 <script>
     import RegistroProfesor from '../components/RegistroProfesor.vue'
-    import Registro from '../components/Registro.vue'
+    import RegistroAlumno from '../components/RegistroAlumno.vue'
     export default {
         name: 'RegistroView',
         components: {
         RegistroProfesor,
-        Registro
+        RegistroAlumno
         },
         data() {
             return {

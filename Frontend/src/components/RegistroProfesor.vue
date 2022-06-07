@@ -5,24 +5,6 @@
         <div class="row">
           <div class="col-6">
             <div class="mb-3">
-              <label for="emailProfesor" class="form-label">Correo electronico</label>
-              <input type="email" class="form-control" id="emailProfesor" aria-describedby="emailProfesorHelp" v-model="profesor.email">
-            </div>
-            <div class="mb-3">
-              <label for="passwordProfesor" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="passwordProfesor" v-model="profesor.password">
-            </div>
-            <div class="mb-3">
-              <label for="confirmPasswordProfesor" class="form-label">Confirme la contraseña</label>
-              <input type="password" class="form-control" id="confirmPasswordProfesor" v-model="profesor.confirmPassword">
-            </div>
-            <div class="mb-3">
-              <label for="categoryProfesor" class="form-label">Categoria de deporte</label>
-              <DeportesDropdown id="categoryProfesor"></DeportesDropdown>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="mb-3">
               <label for="nameProfesor" class="form-label">Nombre</label>
               <input class="form-control" id="nameProfesor" v-model="profesor.name">
             </div>
@@ -37,6 +19,24 @@
             <div class="mb-3">
               <label for="dniProfesor" class="form-label">DNI</label>
               <input class="form-control" id="dniProfesor" v-model="profesor.dni">
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="mb-3">
+              <label for="emailProfesor" class="form-label">Correo electronico</label>
+              <input type="email" class="form-control" id="emailProfesor" aria-describedby="emailProfesorHelp" v-model="profesor.email">
+            </div>
+            <div class="mb-3">
+              <label for="passwordProfesor" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="passwordProfesor" v-model="profesor.password">
+            </div>
+            <div class="mb-3">
+              <label for="confirmPasswordProfesor" class="form-label">Confirme la contraseña</label>
+              <input type="password" class="form-control" id="confirmPasswordProfesor" v-model="profesor.confirmPassword">
+            </div>
+            <div class="mb-3">
+              <label for="categoryProfesor" class="form-label">Categoria de deporte</label>
+              <DeportesDropdown id="categoryProfesor"></DeportesDropdown>
             </div>
           </div>
           <div class="col-6">
