@@ -21,9 +21,8 @@ db.usuarios.insertOne([
   password: 'amarillo' ,
   alumno: false ,
   profesor: true ,
-  deportes:['futbol', 'crossfit', 'running']
+  deportes:['futbol', 'crossfit', 'running'],
   clases:[],
   administrador: true 
   }
   ]);
-

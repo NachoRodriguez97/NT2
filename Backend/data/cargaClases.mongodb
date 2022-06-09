@@ -8,22 +8,15 @@ use('gym_meetings');
 
 // The drop() command destroys all data from a collection.
 // Make sure you run it against the correct database and collection.
-db.usuarios.drop();
+db.clases.drop();
 
 // Insert a few documents into the sales collection.
-db.usuarios.insertOne([
-  {nombre:'Mateo', 
-  apellido: 'Amarillo', 
-  mail:'mateo.amarillo50@gmail.com' , 
-  dni: 41779897 , 
-  telefono: 1151799108 , 
-  nacimiento: '06/04/1999', 
-  password: 'amarillo' ,
-  alumno: false ,
-  profesor: true ,
-  deportes:['futbol', 'crossfit', 'running']
-  clases:[],
-  administrador: true 
+db.clases.insertOne([
+  {
+      fecha: '' ,
+      horario: '' ,
+      deporte: '' ,
+      alumnos: [],
+      profesor: '' 
   }
   ]);
-

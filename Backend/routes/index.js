@@ -6,6 +6,8 @@ const app = express()
 app.use(bodyParser.json());
 app.use(cors());
 
+//USUARIOS
+
 const lista = [{ mail: "mateo.amarillo50@gmail.com", Nombre: "Mateo", Apellido: "Amarillo" },
 { mail: "nacho.rodriguez@gmail.com", Nombre: "Ignacio", Apellido: "Rodriguez" }];
 
@@ -34,26 +36,7 @@ app.delete('/api/usuario/:mail', (req, res) => {
 })
 
 
-const listaDeportes = [{nombre: "Futbol"},{nombre: "Tenis"}];
-
-app.get('/api/listaDeportes', (req, res) => {
-    res.json(listaDeportes);
-})
-
-app.post('/api/deporte', (req, res) => {
-    listaDeportes.push(req.body);
-    res.json(req.body);
-})
-
-app.delete('/api/deporte/:nombre', (req, res) => {
-    console.log(req.params.nombre);
-    res.json({ ope: "ok" });
-})
-
-app.put('/api/deporte/:nombre', (req, res) => {
-    listaDeportes.push(req.body);
-    res.json({ope:"ok"});
-})
+//CLASES
 
 const listaClases = [{deporte: "Futbol", dia:"Lunes", hora: "19:00"},{deporte: "Natacion", dia:"Miercoles", hora: "20:00"}];
 
@@ -70,6 +53,7 @@ app.delete('/api/horario/:nombre', (req, res) => {
     console.log(req.params.nombre);
     res.json({ ope: "ok" });
 })
+
 
 const port = 3001
 app.listen(port, () => {
