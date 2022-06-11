@@ -90,7 +90,7 @@
 </template>
 
 <script>
-import DeportesDropdown from './DeportesDropdown.vue'
+import DeportesDropdown from '../DeportesDropdown.vue'
     export default {
     name: "RegistroProfesor",
     data() {

@@ -14,8 +14,8 @@
 </template>
 
 <script>
-    import RegistroProfesor from '../components/RegistroProfesor.vue'
-    import RegistroAlumno from '../components/RegistroAlumno.vue'
+    import RegistroProfesor from '../components/Forms/RegistroProfesor.vue'
+    import RegistroAlumno from '../components/Forms/RegistroAlumno.vue'
     export default {
         name: 'RegistroView',
         components: {
