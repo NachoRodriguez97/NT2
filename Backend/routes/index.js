@@ -19,7 +19,7 @@ app.post('/api/login', (req, res) => {
     } else {
       res.sendStatus(400);
     }
-  })
+})
 
 app.get('/api/lista', (req, res) => {
     res.json(lista);
