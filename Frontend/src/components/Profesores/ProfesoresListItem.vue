@@ -5,8 +5,8 @@
         </div>
         <div class="col-10">
             <div>
-                <h6 class="mb-0">Marta Gonzalez</h6>
-                <p class="mb-0 opacity-75">Some placeholder content in a paragraph that goes a little longer so it wraps to a new line.</p>
+                <h6 class="mb-0">{{ name }} {{ lastname }}</h6>
+                <p class="mb-0 opacity-75">{{ email }}</p>
             </div>
         </div>
         <div class="col-1">
@@ -20,7 +20,14 @@
 
 <script>
 export default {
-    name: "ProfesoresListItem"
+    name: "ProfesoresListItem",
+    props: [
+        "name",
+        "lastname",
+        "email",
+        //TODO
+        "image"
+    ]
 }
 </script>
 
