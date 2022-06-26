@@ -4,7 +4,7 @@ const DEPORTES = 'deportes';
 const objectId = require('mongodb').ObjectId;
 
 async function getAllDeportes(){
-    const connectiondb = await conn.getConnection();
+    const connectiondb = await connection.getConnection();
     const deportes = await connectiondb
                         .db(DATABASE)
                         .collection(DEPORTES)
