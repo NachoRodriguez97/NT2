@@ -11,6 +11,7 @@ import Reservar from '../views/ReservarView.vue'
 import NotFound from '../views/NotFoundView.vue'
 import Horarios from '../components/Horarios.vue'
 import EditDeporte from '../components/EditDeporte.vue'
+import Logout from '../views/Logout.vue'
 
 const routes = [
     {path: '/', component: Home },
@@ -23,6 +24,7 @@ const routes = [
     {path: '/EditDeporte/:nombre', component: EditDeporte},
     {path: '/Registro', component: Registro},
     {path: '/Reservar', component: Reservar},
+    {path: '/Logout', component: Logout},
 
     { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound },
 

@@ -5,11 +5,13 @@
     <!--VISTA PARA USUARIOS-->
     <div>
     <h4>Vista de Usuarios</h4>
-    <h4>Clases disponibles</h4>
+    <h2>Clases disponibles</h2>
     <li v-for="clas in listaClases" :key="clas.deporte">
         {{ clas.deporte }} {{clas.dia}} {{clas.hora}}
-       
-      </li>
+        <button style="margin: 5px" class="btn btn-outline-success">
+          Anotarse
+        </button>
+    </li>
     </div>
   <hr>
     <!--VISTA PARA ADMINISTRADOR-->

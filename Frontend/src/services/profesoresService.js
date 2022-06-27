@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const apiClient = axios.create({
-    baseURL: 'http://localhost:3001/api/profesores',
+    baseURL: 'http://localhost:3001',
     headers: {
         Accept: 'application/json',
         'Content-Type': 'application/json'
@@ -10,10 +10,13 @@ const apiClient = axios.create({
 
 export default {
     getAllProfesores() {
-        return apiClient.get('/');
+        return apiClient.get('/api/listaProfesores');
     },
     getProfesor(profesor) {
         return apiClient.get('/' + profesor);
+    },
+    addProfesor(profesor){
+        return apiClient.post('/api/profesor', profesor)
     }
 
     //TODO

@@ -22,7 +22,7 @@ export default {
   data() {
     return {
       lista: {},
-      usuario: { mail: 0, nombre: "", apellido: ""},
+      usuario: { mail: "", nombre: "", apellido: ""},
     };
   },
 

@@ -23,8 +23,6 @@ export const loginStore = defineStore('main', {
         logout() {
             console.log('log out en store');
             this.estaLogeado = false;
-            location.reload();
-            localStorage.removeItem('usuario');
         }
     }
 })

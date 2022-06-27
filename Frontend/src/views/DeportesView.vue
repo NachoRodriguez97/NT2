@@ -8,12 +8,6 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
       />
       </head>
-      <li v-for="dep in listaDeportes" :key="dep.nombre">
-        {{ dep.nombre }}
-        <button style="margin: 5px" class="btn btn-outline-primary">
-          Ver Horarios
-        </button>
-      </li>
       <div class="container mt-5">
         <div class="row px-5">
           <div class="col-6">
@@ -84,9 +78,9 @@
       <li v-for="dep in listaDeportes" :key="dep.nombre">
         {{ dep.nombre }}
 
-        <button style="margin: 5px" @click="llamarAEditar(dep.nombre)">
+        <!-- <button style="margin: 5px" @click="llamarAEditar(dep.nombre)">
           Editar
-        </button>
+        </button> -->
         <button style="margin: 5px" @click="eliminar(dep.nombre)">
           Eliminar
         </button>

@@ -77,6 +77,14 @@
                   >
                 </li>
                 <li class="nav-item">
+                  <router-link
+                    v-if="estaLogeado"
+                    class="nav-link active mx-3"
+                    to="/Horarios"
+                    >Clases</router-link
+                  >
+                </li>
+                <li class="nav-item">
 <!--                   <router-link to="/Login"
                     ><img
                       src="./assets/Home/Usuario.png"
@@ -84,9 +92,15 @@
                       width="40"
                       height="40"
                   /></router-link> -->
-                  <router-link to="/Login">
+                  <router-link v-if="!estaLogeado" to="/Login">
                     <button type="button" class="btn btn-primary">Iniciar sesion</button>
                   </router-link>
+                </li>
+                <li class="nav-item">
+                  <router-link v-if="estaLogeado" to="/Logout">
+                    <button type="button" class="btn btn-primary"> Cerrar Sesión </button>
+                  </router-link
+                  >
                 </li>
               </ul>
             </div>

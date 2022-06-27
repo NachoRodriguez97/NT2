@@ -16,7 +16,7 @@
             <div>
               <label>¿No tienes una cuenta? <router-link to="/Registro"><a>Registrate</a></router-link></label>
             </div>
-            <button type="submit" class="btn btn-primary">Ingresar</button>
+            <button @click="login" type="submit" class="btn btn-primary">Ingresar</button>
           </form>
         </div>
       </div>
